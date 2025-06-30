@@ -1,12 +1,61 @@
-# React + Vite
+# 🌸 SampannAI – Empowering Women through Financial Inclusion 💰
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+SampannAI is a voice-first, WhatsApp-integrated AI assistant designed to bridge the financial literacy and accessibility gap for women in underserved communities. It enables simplified access to government schemes, financial literacy, and assistance through multiple input modes: voice, chat, and SMS fallback.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🎙️ **Voice Input** (offline support coming soon)
+- 💬 **WhatsApp Chat UI Mock**
+- 🔎 **Smart Scheme Matching** using NLP + AI
+- 🗂️ **Scheme Cards** with eligibility and next steps
+- 🌐 **Lite Web Views** for mobile access
+- 📱 **SMS Fallback** for low-end phones
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🖥️ Tech Stack
+
+| Layer        | Technologies Used                                 |
+|-------------|---------------------------------------------------|
+| **Frontend** | React, TailwindCSS, Lucide Icons, Vite            |
+| **Backend**  | FastAPI, Python 3.10, Redis, PostgreSQL           |
+| **AI/ML**    | PyTorch Lightning, HuggingFace Transformers, ONNX Runtime, MLflow |
+| **DevOps**   | Docker, GitHub Actions (optional for CI/CD)       |
+
+---
+
+## 🧠 AI Capabilities
+
+- Fine-tuned transformer models on regional Indian languages
+- Semantic intent recognition
+- Scheme classification and match scoring
+- Multi-turn response recommendation
+
+---
+
+## 🖼️ Screenshots
+
+<img src="public/preview.png" alt="UI Preview" width="800"/>
+
+---
+
+## 📁 Project Structure
+
+
+---
+
+## ⚙️ Local Setup Instructions
+
+### 📦 Frontend (React + Tailwind)
+
+```bash
+cd frontend
+npm install
+npm run dev
+cd backend
+python -m venv venv
+source venv/bin/activate  # or venv\Scripts\activate on Windows
+pip install -r requirements.txt
+uvicorn api:app --reload
